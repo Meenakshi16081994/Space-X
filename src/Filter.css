@@ -1,0 +1,85 @@
+.Filter {
+box-sizing:border-box;
+background-color:white ;
+float:left;
+margin:10px;
+padding:5px;
+width:20%;
+height:40%
+}
+
+
+.Main-block {
+ display:inline-flex
+}
+
+.Yearbox {
+    
+     margin:10px;
+    /* flex-flow: column; */
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap:10px
+    /* flex-wrap: wrap;
+    justify-content:space-between; */
+    /* align-items:space-between; */
+
+}
+
+.Para {
+   text-align: center;
+   text-decoration: underline;
+
+
+}
+
+.imag {
+ 
+   float:right;
+   display:grid;
+   grid-template-columns: auto auto auto auto;
+   grid-column-gap: 50px;
+   grid-row-gap: 50px;
+   
+  
+   
+   
+
+
+}
+
+.imagbox {
+   box-sizing:border-box;
+   background-color:white ; ;
+   text-align: center;
+
+   
+
+}
+
+
+@media screen and (max-width: 701px) {
+
+   .imag {
+ 
+   
+      display:flex;
+      flex-wrap:wrap;
+   
+      
+   
+   }
+   
+   .imagbox {
+      box-sizing:border-box;
+      background-color:white ; ;
+      text-align: center;
+   }
+   
+   .Main-block {
+     display: block;
+
+   }
+
+}
